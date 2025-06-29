@@ -16,7 +16,7 @@ class model_input(BaseModel):
     DiabetesPedigreeFunction : float
     Age : int
 
-diabetes_model = pickle.load(open('C:/Users/Henil Patel/Documents/sav/diabetes_model.sav','rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav','rb'))
 
 @app.post('/diabetes_prediction')
 def diabetes_predd(input_parameters : model_input):
